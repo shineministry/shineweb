@@ -304,29 +304,5 @@
         <p>Last updated: April 2026</p>
     </div>
 
-<!-- FLOATING BOT -->
-<div id="chatbot-btn" onclick="toggleChat()">
-    🤖
-</div>
-
-<!-- CHAT WINDOW -->
-<div id="chatbot-box">
-    <div class="chat-header">
-        Shine Assistant ✨
-        <span onclick="toggleChat()">✖</span>
-    </div>
-
-</div>
-</footer>
-<div id="chatbot-container"></div>
-
-<script>
-fetch("chatbot.html")
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("chatbot-container").innerHTML = data;
-  });
-</script>
-
 </body>
 </html>
